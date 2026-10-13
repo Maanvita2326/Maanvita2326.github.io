@@ -28,49 +28,73 @@
             href = "https://github.com/Maanvita2326/Maanvita2326.github.io.git">GitHub</a>
     </p>
     <h3 class="small"> 
-        Hey! This is Maanvita and this is my first ever website with 3 charts (I liked the visualistic design of the same). Hope you enjoy them as much as I did!
+        Hey! This is Maanvita and this is my first ever website with various elements for my PP434 class. 
+        Hope you enjoy this as much as I enjoy my class!
 
     </h3>
 
     <section>
+        <h2>Week 1 Tasks</h2>
+
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
+            <h3>Chart 1 - UK Beach Litter by Brand</h3>
             <p> 
-              This chart was given to us in the class and represents a basic example to be displayed on the website. I will change it as and when I learn more about this.  
+              Coca-Cola takes the gold medal nobody wanted, with roughly 16% of the branded litter found on 
+              UK beaches. PepsiCo and AB InBev are on the second and third position respectively (winning 
+              the silver and the bronze medals). The sandcastle competition is clearly not the main event. 
             </p>
         </div>
 
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location1"></figure>
+
+      <div class="chart-description">
+            <h3>Chart 2 - Food CO2 Greenhouse Gas Emission </h3>
+            <p> 
+              Beef is the undisputed heavyweight, producing approximately 60 kg of CO2 per kg of food, 
+              mostly from landuse and farming. Meanwhile, peas sit at the bottom of the chart, 
+              quietly saving the planet. 
+            </p>
+        </div>
+        <figure id="Location2"></figure> 
+
+      <div class="chart-description">
+            <h3>Chart 3 - Price Variation of a Pub Meal in UK  </h3>
+            <p> 
+              In the early 90s, a pub meal cost a few quid and now the priciest pubs are well into double 
+              digits. The shaded bands show everyone from the bargain pubs to the fancy ones and they have
+              all gone up together.
+            </p>
+        </div>
+        <figure id="Location3"></figure> 
+    </section>
+
+
+    <section>
+        <h2>Week 2 Tasks</h2>
+
+        <div class="chart-description">
+            <h3> Chart 4 - UK Consumer Price Index (CPI) for Chocolates </h3>
+            <p>
+                This chart describes the CPI for chocolates in the UK from 2015 to 2026
+            </p>
+        <figure id="Location4"></figure>
+        </div>
 
     </section>
-      <div class="chart-description">
-            <h2>Section 2: Chart 2 - Food CO2 Greenhouse Gas Emission </h2>
-            <p> 
-              Now this is the first chart I have chosen myself. It describes
-            </p>
-        </div>
-        
-        <figure id="Location1"></figure> 
-
-        </section>
-      <div class="chart-description">
-            <h2>Section 3: Chart 2 - Price of a Pub Meal in UK </h2>
-            <p> 
-              This is the 3rd chart I have chosen myself. It describes
-            </p>
-        </div>
-
-        <figure id="Location1"></figure> 
-
     <script>
 
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
+        let figure_1_spec = "chart1.json"
 
-        let figure_2_spec = "wk1.chart1.json"
+        let figure_2_spec = "chart2.json"
 
-        let figure_3_spec = "wk1_chart2.json"
+        let figure_3_spec = "chart3.json"
+
+        let figure_4_spec = "chart4.json"
 
         vegaEmbed('#Location1', figure_1_spec)
+        vegaEmbed('#Location2', figure_2_spec)
+        vegaEmbed('#Location3', figure_3_spec)
+        vegaEmbed('#Location4', figure_4_spec)
 
     </script>
 
