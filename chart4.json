@@ -1,0 +1,28 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/Maanvita2326/Maanvita2326.github.io/refs/heads/main/UK_CPI_Chocolates.csv"},
+
+    "title": {
+      "text": "UK CPI for Chocolates (2015-2025)",
+      "subtitle": "Source: ONS"
+      },
+
+    "width":300,
+    "height":300,
+
+    "mark":{"type": "bar","color":"pink", "size": 10},
+ 
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {"title": "Year", "grid": false}
+        },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {"title": "CPI Index"}
+        }
+    }
+}
